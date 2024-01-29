@@ -1,0 +1,187 @@
+/* DESKTOP SECTION  */
+
+.gallery {
+  padding: 80px 0 0px 0;
+  background-color: #212121;
+  height: 105vh;
+}
+
+.container-gallery {
+  width: 100%;
+  height: 120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gallery .row-gallery-title span {
+  display: block;
+  color: white;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  to {
+    text-shadow: 0 0 20px #014d55, 0 0 10px rgba(255, 255, 255, 0.4),
+      0 0 30px rgba(255, 255, 255, 0.2);
+  }
+}
+.row-gallery-title span {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.row-gallery-title {
+  background-color: #212121;
+}
+.orizontalline1 {
+  width: 99.7%;
+  height: 3px;
+  background-color: #000;
+  transform: rotate(180deg);
+  border: 3px solid #014d55;
+  margin-top: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 10);
+}
+
+.orizontalline2 {
+  width: 99.7%;
+  height: 3px;
+  background-color: #000;
+  transform: rotate(180deg);
+  border: 3px solid #014d55;
+  margin-top: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 10);
+}
+
+/* CAROUSEL SECTION START */
+.slick-slider {
+  width: 25%;
+  margin: -90px auto;
+  position: relative;
+  box-shadow: 30px 60px 20px rgba(0, 0, 0, 0.9);
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li {
+  margin: 0 15px;
+}
+
+.slick-dots li button {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 8px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.85;
+  color: #ffa600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* CAROUSEL SECTION END */
+/* PLAYER SECTION START */
+.react-players {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.react-player1 {
+  position: absolute;
+  top: 70%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
+}
+
+.react-player2 {
+  position: absolute;
+  top: 70%;
+  right: 18%;
+  transform: translate(50%, -50%);
+  margin-top: 70px;
+}
+
+.react-player2::before,
+.react-player1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  margin-top: -30px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px black solid;
+  box-shadow: 30px 60px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* MOBILE SECCTION  */
+@media (max-width: 768px) {
+  .gallery {
+    height: 160vh;
+  }
+
+  .slick-slider {
+    width: 250px;
+  }
+
+  .slick-list {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slick-slide {
+    width: 100%;
+    outline: none;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+
+  .react-player2 {
+    margin-right: 33%;
+    width: 100%;
+    max-width: 430px;
+    margin-top: 50vh;
+  }
+  .react-player1 {
+    margin-left: 31%;
+    width: 100%;
+    max-width: 430px;
+    height: 150vh;
+    margin-top: 15vh;
+  }
+  .react-player2::before,
+  .react-player1::before {
+    display: none;
+  }
+  .orizontalline3 {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,185 @@
+/* DESKTOP SECTION  */
+
+.contact {
+  width: 100%;
+  overflow: hidden;
+  padding: 180px 0;
+  display: block;
+  background-color: #212121;
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+    url(/public/assets/backcontactimg.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px;
+}
+
+.container-contact {
+  width: 99.8%;
+  height: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-contact-title span {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.box-contact-phone,
+.box-contact-email,
+.box-contact-location,
+.box-contact-solcialmedia {
+  margin-bottom: 20px;
+}
+
+.box-contact-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.box-contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.box-contact-info {
+  display: inline-block;
+}
+.box-contact-location .box-contact-info {
+  margin-top: 20px;
+}
+.box-contact-location .box-contact-info a {
+  white-space: nowrap;
+}
+.icon.social {
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffa600;
+  text-align: center;
+}
+.icon.social svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+.box-contact-solcialmedia {
+  display: flex;
+}
+.box-contact-icofb,
+.box-contact-icoinst {
+  margin-right: 10px;
+}
+.largebox-contact {
+  padding: 0px 50px 20px 150px;
+}
+.map-container {
+  float: right;
+  margin-right: 50px;
+  margin-top: -400px;
+  border-radius: 10px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
+  position: relative;
+  text-align: center;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.18em;
+  margin-top: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  margin-block-end: 3em;
+  margin-block-start: -3em;
+  margin-inline-start: 110px;
+}
+.map-container h1 {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+}
+.map-container,
+.contact-info-title {
+  position: relative;
+  text-align: center;
+}
+
+.contact-info-title h1 {
+  position: relative;
+  transform: translate(-26%, -500%);
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+/* MOBILE SECTION  */
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 40%;
+    width: 100%;
+    height: 130vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/public/assets/backcontactimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .map-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .map-container h1 {
+    width: auto;
+    margin-left: 30px;
+  }
+
+  .box-contact-phone,
+  .box-contact-email,
+  .box-contact-location,
+  .box-contact-solcialmedia {
+    width: 100%;
+  }
+
+  .box-contact-info,
+  .box-contact-icon {
+    text-align: center;
+  }
+
+  .largebox-contact {
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info-title h1 {
+    margin: 30px 0 0 50px;
+  }
+}
